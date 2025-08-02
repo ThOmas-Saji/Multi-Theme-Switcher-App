@@ -1,69 +1,47 @@
-# React + TypeScript + Vite
+# 🎨 Multi-Theme Switcher App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive React + TypeScript application with a dynamic theme switcher supporting three distinct UI themes, built with Tailwind CSS and React Router.
 
-Currently, two official plugins are available:
+## 🔥 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+👉 [View Live on Vercel](https://your-vercel-url.vercel.app)
 
-## Expanding the ESLint configuration
+## 🧰 Tech Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- React + Vite
+- TypeScript
+- Tailwind CSS, Scss
+- React Router
+- Context API
+- Axios
+- Google Fonts
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 📦 Features
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+- 🌗 Theme switcher with 3 themes:
+  - Theme 1: Light & Minimal (sans-serif)
+  - Theme 2: Dark Mode with Sidebar (sans-serif bold)
+  - Theme 3: Colorful, Grid-based (Pacifico)
+- 🎯 Data from [FakeStoreAPI](https://fakestoreapi.com/products)
+- 💾 Theme persists using localStorage
+- 🔁 Responsive layout
+- 🔐 Secure and accessible
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 🛠️ Setup Instructions
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+```bash
+git clone https://github.com/yourusername/multi-theme-switcher-app.git
+cd multi-theme-switcher-app
+npm install
+npm run dev
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+src/
+│
+├── assets/         # svg, images
+├── components/     # Header, SidBar UI components
+├── context/        # Theme Context Provider
+├── pages/          # Home, About, Contact
+├── styles/         # Tailwind + Google Fonts + Scss
+├── App.tsx         # Main App
+├── main.tsx        # App entry
+└── index.css       # Global styles
