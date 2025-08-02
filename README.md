@@ -4,7 +4,7 @@ A responsive React + TypeScript application with a dynamic theme switcher suppor
 
 ## 🔥 Live Demo
 
-👉 [View Live on Vercel](https://your-vercel-url.vercel.app)
+👉 [View Live on Vercel](https://multi-theme-switcher-app-phi.vercel.app/)
 
 ## 🧰 Tech Stack
 
@@ -30,8 +30,8 @@ A responsive React + TypeScript application with a dynamic theme switcher suppor
 ## 🛠️ Setup Instructions
 
 ```bash
-git clone https://github.com/yourusername/multi-theme-switcher-app.git
-cd multi-theme-switcher-app
+git clone https://github.com/ThOmas-Saji/Multi-Theme-Switcher-App.git
+cd Multi-Theme-Switcher-App
 npm install
 npm run dev
 
