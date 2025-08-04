@@ -80,14 +80,12 @@ button {
   }
 }
 
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) {
-    /* Safari-only CSS goes here */
-    body {
-      .responsive-grid {
-        .product-card {
-          max-height: 30dvh;
-        }
+@supports (-webkit-touch-callout: none) {
+  /* Safari-only CSS goes here */
+  body {
+    .responsive-grid {
+      .product-card {
+        max-height: 30dvh;
       }
     }
   }
