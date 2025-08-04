@@ -17,10 +17,8 @@ const Home = () => {
 
     const getProducts = async () => {
         try {
-            // const res = axios.get('https://fakestoreapi.com/products')
-            // setProducts(res.data);
-            const res = await axios.get('https://fakestoreapi.in/api/products?limit=18');
-            setProducts(res.data?.products)
+            const res = await axios.get('https://fakestoreapi.com/products?limit=15')
+            setProducts(res.data);
         } catch (err: unknown) {
             console.log(err)
             setError("Failed to fetch products. Please try again later.");
