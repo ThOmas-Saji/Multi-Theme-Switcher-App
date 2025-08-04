@@ -46,6 +46,7 @@ button {
 
     .product-image {
       object-fit: contain;
+      max-height: 15rem;
     }
 
     .product-details-wrapper {
@@ -77,17 +78,6 @@ button {
   @media (min-width: 1024px) {
     width: 90%;
     grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-@supports (-webkit-touch-callout: none) {
-  /* Safari-only CSS goes here */
-  body {
-    .responsive-grid {
-      .product-card {
-        max-height: 30dvh;
-      }
-    }
   }
 }
 
